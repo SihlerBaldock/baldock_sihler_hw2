@@ -1,3 +1,147 @@
 .hidden {
     display: none;
 }
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: rgb(154, 138, 248);
+    padding: 10px 0;
+}
+
+#main-logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#soldier-nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+}
+
+#soldiers {
+    list-style-type: none;
+    text-align: center;   
+}
+
+#soldiers li {
+    display: inline;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+#soldiers li img {
+    padding: 10px;
+    border: solid 1px white;
+    transition: all .5s ease-in-out;
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px wheat;
+}
+
+#soldiers li a {
+    text-decoration: none;
+}
+
+#soldiers li img:hover {
+    filter: grayscale(100%);
+    border-radius: 50%;
+}
+
+#instructions {
+    padding: 20px;
+}
+
+#instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+#instructions p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+#main-footer {
+    height: 100px;
+    background-color: rgb(154, 138, 248);
+    margin: -8px;
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+#lightbox1 {
+    background-image: url(../images/igrispng.png);
+}
+
+#lightbox2 {
+    background-image: url(../images/ironpng.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/tuskpng.png);
+}
+
+#lightbox4 {
+    background-image: url(../images/kaiselpng.png);
+}
+
+#lightbox5 {
+    background-image: url(../images/berupng.png);
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 95vw;
+    transition: all .5s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color: red;
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.lb-heading {
+    font-size: 32px;
+}
+
+.lightbox p {
+    line-height: 26px;
+}
