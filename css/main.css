@@ -4,13 +4,13 @@
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
 header {
     background-color: rgb(154, 138, 248);
-    padding: 10px 0;
+    padding: none;
 }
 
 #main-logo {
@@ -22,13 +22,17 @@ header {
 #soldier-nav {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: black;
+    background-color: #5a5656;
+    background-image: url(../images/chainlink.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #soldiers {
     list-style-type: none;
-    text-align: center;   
+    text-align: center;
 }
+
 
 #soldiers li {
     display: inline;
@@ -39,7 +43,7 @@ header {
 #soldiers li img {
     padding: 10px;
     border: solid 1px white;
-    transition: all .5s ease-in-out;
+    transition: all 1s ease-in-out;
     background-color: black;
     box-shadow: 0px 0px 10px 0px wheat;
 }
@@ -49,8 +53,10 @@ header {
 }
 
 #soldiers li img:hover {
+    transform: rotateY(360deg);
     filter: grayscale(100%);
-    border-radius: 50%;
+    border-radius: 150px;
+
 }
 
 #instructions {
@@ -76,9 +82,8 @@ footer {
 }
 
 #main-footer {
-    height: 100px;
+    height: 80px;
     background-color: rgb(154, 138, 248);
-    margin: -8px;
 }
 
 .lightbox {
@@ -101,22 +106,38 @@ footer {
 
 #lightbox1 {
     background-image: url(../images/igrispng.png);
+    background-size: 45%;
+    background-position: 20% 75%;
+    position: fixed;
+    text-align: center;
 }
 
 #lightbox2 {
     background-image: url(../images/ironpng.png);
+    background-size: 40%;
+    background-position: 90% 60%;
+    text-align: center;
 }
 
 #lightbox3 {
     background-image: url(../images/tuskpng.png);
+    background-size: 45%;
+    background-position: center;
+    text-align: center;
 }
 
 #lightbox4 {
     background-image: url(../images/kaiselpng.png);
+    background-size: 65%;
+    background-position: 5% 20%;
+    text-align: center;
 }
 
 #lightbox5 {
     background-image: url(../images/berupng.png);
+    background-size: 70%;
+    background-position: right;
+    text-align: center;
 }
 
 .lightbox-close {
@@ -132,10 +153,35 @@ footer {
     color: red;
 }
 
-.lightbox section {
+.lightbox #igris {
     width: 600px;
-    margin-left: 40%;
-    margin-top: 50px;
+    margin-left: 900px;
+    margin-top: 100px;
+}
+
+.lightbox #iron {
+    width: 600px;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+
+.lightbox #tusk {
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 400px;
+
+}
+
+.lightbox #kaisel {
+    width: 600px;
+    margin-left: 1250px;
+    margin-top: 450px;
+}
+
+.lightbox #beru {
+    width: 600px;
+    margin-left: 150px;
+    margin-top: 200px;
 }
 
 .lb-heading {
